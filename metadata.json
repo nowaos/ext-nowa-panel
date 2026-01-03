@@ -1,0 +1,10 @@
+{
+  "name": "Nowa Panel",
+  "description": "Adaptive top panel with automatic styling based on wallpaper analysis",
+  "uuid": "nowa-panel@nowaos",
+  "shell-version": [
+    "48"
+  ],
+  "url": "https://github.com/nowaos/ext-nowa-panel",
+  "version": 1
+}

@@ -1,0 +1,147 @@
+/* Base panel - transparent background */
+#panel {
+  background-color: transparent;
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1),
+              color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* State 1: Dark - Clean dark background with white icons/text */
+#panel.dark {
+  background-color: transparent !important;
+  color: white;
+}
+
+#panel.dark .panel-button {
+  color: white;
+  font-weight: bold;
+  text-shadow:
+    0 0 2px rgba(0, 0, 0, 0.15),
+    0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#panel.dark .panel-button StIcon,
+#panel.dark .panel-button StLabel {
+  color: white;
+}
+
+#panel.dark .panel-button.clock-display .clock {
+  color: white !important;
+}
+
+#panel.dark .workspace-dot {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* State 2: Light - Clean light background with black icons/text */
+#panel.light {
+  background-color: transparent !important;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+#panel.light .panel-button {
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: bold;
+  text-shadow:
+    0 0 2px rgba(255, 255, 255, 0.15),
+    0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+#panel.light .panel-button StIcon,
+#panel.light .panel-button StLabel {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+#panel.light .panel-button.clock-display .clock {
+  color: rgba(0, 0, 0, 0.65) !important;
+}
+
+#panel.light .workspace-dot {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+}
+
+/* State 3: Translucent Dark - Busy dark background - 25% opacity */
+#panel.translucent-dark {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(10px) !important;
+  color: white;
+}
+
+#panel.translucent-dark .panel-button {
+  color: white;
+  font-weight: bold;
+  text-shadow:
+    0 0 2px rgba(0, 0, 0, 0.08),
+    0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+#panel.translucent-dark .panel-button StIcon,
+#panel.translucent-dark .panel-button StLabel {
+  color: white;
+}
+
+#panel.translucent-dark .panel-button.clock-display .clock {
+  color: white !important;
+}
+
+#panel.translucent-dark .workspace-dot {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* State 4: Translucent Light - Busy light background - 20% opacity */
+#panel.translucent-light {
+  background-color: rgba(255, 255, 255, 0.20) !important;
+  backdrop-filter: blur(10px) !important;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+#panel.translucent-light .panel-button {
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#panel.translucent-light .panel-button StIcon,
+#panel.translucent-light .panel-button StLabel {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+#panel.translucent-light .panel-button.clock-display .clock {
+  color: rgba(0, 0, 0, 0.65) !important;
+}
+
+#panel.translucent-light .workspace-dot {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+}
+
+/* Window Maximized State - Black opaque panel with white text */
+#panel.maximized {
+  background-color: rgba(0, 0, 0, 1.0) !important;
+  color: white !important;
+}
+
+#panel.maximized .panel-button {
+  color: white !important;
+}
+
+#panel.maximized .panel-button StIcon,
+#panel.maximized .panel-button StLabel {
+  color: white !important;
+}
+
+#panel.maximized .panel-button.clock-display .clock {
+  color: white !important;
+}
+
+#panel.maximized .workspace-dot {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Hide window caption in overview */
+.window-caption {
+  spacing: 0;
+  background-color: transparent !important;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  font-size: 0;
+}
