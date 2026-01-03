@@ -15,9 +15,5 @@ Thank you to everyone who has contributed to this project!
 This project was inspired by and incorporates ideas from:
 
 * **ElementaryOS WingPanel** - Adaptive panel behavior based on wallpaper analysis
-* **GNOME Rounded Corners** (by lennart-k) - Rounded screen corners implementation
-  - Repository: https://github.com/lennart-k/gnome-rounded-corners
-* **Night Theme Switcher** (by rmnvgr) - Automatic theme switching logic
-  - Repository: https://gitlab.com/rmnvgr/nightthemeswitcher-gnome-shell-extension
 
 Special thanks to all the GNOME Shell extension developers who share their code and knowledge with the community.
